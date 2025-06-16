@@ -19,14 +19,14 @@ const Experience: React.FC = () => {
   const selected = experience[selectedIdx];
 
   return (
-    <section className="pt-24 pb-12 px-2 sm:px-6 transition-colors relative overflow-hidden">
+    <section className="pt-24 pb-12 px-2 sm:px-6 bg-white dark:bg-gray-900 transition-colors relative overflow-hidden">
       {/* Subtle animated background blob */}
       <motion.div
         className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-indigo-200 dark:bg-indigo-900 opacity-30 blur-3xl z-0"
         animate={{ scale: [1, 1.1, 1], rotate: [0, 15, -10, 0] }}
         transition={{ repeat: Infinity, duration: 10, ease: 'easeInOut' }}
       />
-      <h1 className="relative z-10 text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Professional Experience 💼</h1>
+      <h1 className="relative z-10 text-3xl sm:text-4xl font-extrabold text-center mb-10 text-black dark:text-white">Professional Experience 💼</h1>
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12">
         {/* Left: Detailed Card */}
         <div className="flex-1">
@@ -48,11 +48,11 @@ const Experience: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{selected.company}</h2>
               </div>
               <div className="flex items-center gap-2 text-lg font-medium mb-2 text-gray-900 dark:text-white">
-                <FaUserTie color="#818cf8" size={22} />
+                <FaUserTie color="#3b82f6" size={22} />
                 {selected.role}
               </div>
-              <div className="flex items-center gap-2 text-gray-600 dark:text-indigo-200 text-sm mb-6">
-                <FaMapMarkerAlt color="#818cf8" size={18} />
+              <div className="flex items-center gap-2 text-gray-600 dark:text-blue-200 text-sm mb-6">
+                <FaMapMarkerAlt color="#3b82f6" size={18} />
                 {selected.location} · {selected.startDate} – {selected.endDate}
               </div>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-white">
@@ -69,11 +69,11 @@ const Experience: React.FC = () => {
             <motion.button
               key={item.company + item.role}
               onClick={() => setSelectedIdx(idx)}
-              className={`text-left rounded-xl px-4 py-3 border transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400/50 flex items-center gap-3
+              className={`text-left rounded-xl px-4 py-3 border transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400/50 flex items-center gap-3
                 ${
                   idx === selectedIdx
-                    ? 'bg-white dark:bg-gray-900 border-indigo-300 dark:border-indigo-700 shadow-lg scale-[1.03]'
-                    : 'bg-white/70 dark:bg-gray-800/70 border-gray-200 dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/40 opacity-80 hover:opacity-100'
+                    ? 'bg-white dark:bg-gray-900 border-blue-300 dark:border-blue-700 shadow-lg scale-[1.03]'
+                    : 'bg-white/70 dark:bg-gray-800/70 border-gray-200 dark:border-gray-700 hover:bg-blue-50 dark:hover:bg-blue-900/40 opacity-80 hover:opacity-100'
                 }
               `}
               style={{ transition: 'all 0.2s' }}
@@ -89,7 +89,7 @@ const Experience: React.FC = () => {
               ) : null}
               <div className="flex-1">
                 <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{item.startDate} – {item.endDate}</div>
-                <div className={`font-semibold ${idx === selectedIdx ? 'text-indigo-700 dark:text-indigo-400' : 'text-gray-900 dark:text-gray-200'}`}>{item.company}</div>
+                <div className={`font-semibold ${idx === selectedIdx ? 'text-blue-700 dark:text-blue-400' : 'text-gray-900 dark:text-gray-200'}`}>{item.company}</div>
                 <div className="text-sm text-gray-700 dark:text-gray-300">{item.role}</div>
               </div>
             </motion.button>

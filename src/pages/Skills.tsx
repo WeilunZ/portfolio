@@ -23,7 +23,7 @@ const gradientColors = [
 
 const Skills: React.FC = () => {
   return (
-    <section className="pt-24 pb-12 px-2 sm:px-6 bg-pink-50 dark:bg-gray-950 transition-colors">
+    <section className="pt-24 pb-12 px-2 sm:px-6 bg-white dark:bg-gray-900 transition-colors">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">My Skills ✨</h1>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {techStack.map((category, categoryIdx) => (
@@ -32,9 +32,9 @@ const Skills: React.FC = () => {
             variants={categoryVariants}
             initial="hidden"
             animate="visible"
-            className={`rounded-2xl shadow-xl border border-gray-200 dark:border-gray-800 p-6 flex flex-col items-center text-center bg-gradient-to-br ${gradientColors[categoryIdx % gradientColors.length]} text-white`}
+            className={`rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 p-6 flex flex-col items-center text-center bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white`}
           >
-            <h2 className="text-2xl font-bold mb-4 border-b border-white/30 pb-2 w-full flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 w-full flex items-center justify-center gap-2">
               <span className="text-3xl leading-none">{category.emoji}</span> {category.category}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
                   variants={skillVariants}
                   initial="hidden"
                   animate="visible"
-                  className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full font-medium text-sm"
+                  className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full font-medium text-sm text-gray-700 dark:text-gray-300"
                 >
                   {skill.name}
                 </motion.span>

@@ -6,8 +6,8 @@ import Projects from '../pages/Projects';
 import Blog from '../pages/Blog';
 
 const sectionBackgrounds = [
-  "bg-pink-50 dark:bg-gray-950", // Original background
-  "bg-gray-100 dark:bg-gray-800", // A lighter/darker alternative
+  "bg-white dark:bg-gray-900", // Primary light background, very dark gray for dark mode
+  "bg-gray-50 dark:bg-gray-950", // Slightly off-white for alternating, even darker gray for dark mode
 ];
 
 const MainSections: React.FC = () => {

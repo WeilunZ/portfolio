@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
             <p className="text-gray-700 dark:text-white text-sm mb-2 flex-1">{item.description}</p>
             <div className="flex flex-wrap gap-2 mb-2">
               {item.techStacks.map((tech) => (
-                <span key={tech} className="bg-indigo-700/80 text-xs px-2 py-1 rounded font-semibold text-white/90">{tech}</span>
+                <span key={tech} className="bg-gray-200 text-xs px-2 py-1 rounded font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-300">{tech}</span>
               ))}
             </div>
             <div className="flex gap-3 flex-wrap mt-auto">
@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-indigo-300 hover:text-indigo-100 underline text-xs font-medium"
+                  className="text-blue-600 dark:text-blue-400 hover:underline text-xs font-medium"
                 >
                   {link.label}
                 </a>

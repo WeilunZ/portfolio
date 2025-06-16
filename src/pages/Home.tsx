@@ -1,6 +1,5 @@
 import React from 'react';
-
-const profileImg = 'https://ui-avatars.com/api/?name=Weilun+Zhou&size=160'; // Placeholder image, replace with your own
+import profileImg from '../assets/selfie.jpg'; // Placeholder image, replace with your own
 
 const socialLinks = [
   {

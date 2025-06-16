@@ -23,7 +23,7 @@ const gradientColors = [
 
 const Skills: React.FC = () => {
   return (
-    <section className="pt-24 pb-12 px-2 sm:px-6 bg-white dark:bg-gray-900 transition-colors">
+    <section className="pt-0 pb-12 px-2 sm:px-6 bg-white dark:bg-gray-900 transition-colors">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">My Skills ✨</h1>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {techStack.map((category, categoryIdx) => (
@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
             variants={categoryVariants}
             initial="hidden"
             animate="visible"
-            className={`rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 p-6 flex flex-col items-center text-center bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white`}
+            className={`rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 p-6 flex flex-col items-center text-center bg-white dark:bg-gray-800 text-gray-900 dark:text-white`}
           >
             <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 w-full flex items-center justify-center gap-2">
               <span className="text-3xl leading-none">{category.emoji}</span> {category.category}

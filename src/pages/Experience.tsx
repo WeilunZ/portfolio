@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
   const selected = experience[selectedIdx];
 
   return (
-    <section className="pt-24 pb-12 px-2 sm:px-6 bg-white dark:bg-gray-900 transition-colors relative overflow-hidden">
+    <section className="pt-24 pb-12 px-2 sm:px-6 bg-white dark:bg-black transition-colors relative overflow-hidden">
       {/* Subtle animated background blob */}
       <motion.div
         className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-indigo-200 dark:bg-indigo-900 opacity-30 blur-3xl z-0"

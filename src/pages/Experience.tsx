@@ -19,14 +19,14 @@ const Experience: React.FC = () => {
   const selected = experience[selectedIdx];
 
   return (
-    <section className="min-h-screen pt-24 pb-12 px-2 sm:px-6 bg-pink-50 dark:bg-gray-950 transition-colors relative overflow-hidden">
+    <section className="pt-24 pb-12 px-2 sm:px-6 transition-colors relative overflow-hidden">
       {/* Subtle animated background blob */}
       <motion.div
         className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-indigo-200 dark:bg-indigo-900 opacity-30 blur-3xl z-0"
         animate={{ scale: [1, 1.1, 1], rotate: [0, 15, -10, 0] }}
         transition={{ repeat: Infinity, duration: 10, ease: 'easeInOut' }}
       />
-      <h1 className="relative z-10 text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Professional Experience</h1>
+      <h1 className="relative z-10 text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Professional Experience 💼</h1>
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12">
         {/* Left: Detailed Card */}
         <div className="flex-1">

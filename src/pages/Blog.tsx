@@ -10,8 +10,8 @@ const cardVariants = {
 
 const Blog: React.FC = () => {
   return (
-    <section className="min-h-screen pt-24 pb-12 px-2 sm:px-6 bg-pink-50 dark:bg-gray-950 transition-colors">
-      <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Tech Blog</h1>
+    <section className="pt-24 pb-12 px-2 sm:px-6 transition-colors">
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 text-gray-900 dark:text-white">Tech Blog ✍️</h1>
       <div className="max-w-3xl mx-auto flex flex-col gap-8">
         {blogs.map((item, idx) => (
           <motion.div

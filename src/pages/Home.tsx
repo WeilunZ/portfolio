@@ -28,17 +28,17 @@ const socialLinks = [
 
 const Home: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] text-center px-4">
+    <section className="flex flex-col items-center pt-24 text-center px-4">
       <img
         src={profileImg}
         alt="Weilun Zhou profile"
         className="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-white dark:border-gray-800 bg-gray-100 object-cover"
       />
-      <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Weilun Zhou</h1>
-      <h2 className="text-xl sm:text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Senior Software Engineer</h2>
-      <div className="text-gray-600 dark:text-gray-300 mb-4">Shanghai, China</div>
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Weilun Zhou ✨</h1>
+      <h2 className="text-xl sm:text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Senior Software Engineer 🚀</h2>
+      <div className="text-gray-600 dark:text-gray-300 mb-4">Shanghai, China 📍</div>
       <p className="max-w-xl text-lg text-gray-700 dark:text-gray-200 mb-6">
-        Passionate about building scalable backend systems, observability platforms, and mentoring engineers. Experienced in Java, Golang, Spring, Kubernetes, and more. Always eager to learn and solve challenging problems.
+        Passionate about building scalable backend systems, observability platforms, and mentoring engineers. Experienced in Java, Golang, Spring, Kubernetes, and more. Always eager to learn and solve challenging problems. 💡
       </p>
       <div className="flex gap-4 justify-center">
         {socialLinks.map((link) => (
@@ -62,16 +62,16 @@ export default Home;
 
 {/* Contact Section */}
 <section className="max-w-xl mx-auto mt-12 mb-8 p-6 bg-white dark:bg-gray-900 rounded-2xl shadow border border-gray-200 dark:border-gray-800 flex flex-col items-center">
-  <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Contact Me</h2>
+  <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Contact Me ✉️</h2>
   <form className="w-full flex flex-col gap-4 mb-4" onSubmit={e => { e.preventDefault(); window.location.href = 'mailto:elvis.zhou0711@gmail.com'; }}>
-    <input type="text" name="name" placeholder="Your Name" className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
-    <input type="email" name="email" placeholder="Your Email" className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
-    <textarea name="message" placeholder="Your Message" rows={4} className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
-    <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded transition">Send Email</button>
+    <input type="text" name="name" placeholder="Your Name 👋" className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
+    <input type="email" name="email" placeholder="Your Email 📧" className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
+    <textarea name="message" placeholder="Your Message 📝" rows={4} className="px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white" required />
+    <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded transition">Send Email ✈️</button>
   </form>
   <div className="flex gap-4">
     <a href="mailto:elvis.zhou0711@gmail.com" className="text-indigo-600 dark:text-indigo-300 hover:underline">elvis.zhou0711@gmail.com</a>
     <span>|</span>
-    <a href="https://linkedin.com/in/weilun-zhou-51b826115" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-300 hover:underline">LinkedIn</a>
+    <a href="https://linkedin.com/in/weilun-zhou-51b826115" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-300 hover:underline">LinkedIn 🔗</a>
   </div>
 </section>
